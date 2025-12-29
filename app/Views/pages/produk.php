@@ -15,6 +15,7 @@
                         <th scope="col">KODE</th>
                         <th scope="col">NAMA</th>
                         <th scope="col">Harga</th>
+                        <th scope="col">Gambar</th>
                         <th scope="col">AKSI</th>
                     </tr>
                 </thead>
@@ -24,6 +25,7 @@
                             <th scope="row"><?= $p['kode']; ?></th>
                             <td><?= $p['nama']; ?></td>
                             <td><?= $p['harga']; ?></td>
+                            <td><img src="/img/<?= $p['gambar']; ?>" alt="" class="gambar" width="100"></td>
                             <td>
                                 <a href="/pages/produk/detail/<?= $p['kode']; ?>" class="btn btn-success">Detail</a>
                             </td>
